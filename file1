@@ -1,6 +1,4 @@
 FROM httpd
-RUN apt-get update
-RUN apt-get install vim -y
-CMD echo vim got installed.
+CMD echo vim manually installed.
 ADD index.html /usr/local/apache2/htdocs
 CMD echo file got moved to container.
